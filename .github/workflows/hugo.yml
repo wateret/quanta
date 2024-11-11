@@ -53,6 +53,7 @@ jobs:
           HUGO_CACHEDIR: ${{ runner.temp }}/hugo_cache
           HUGO_ENVIRONMENT: production
         run: |
+          cd site-content && \
           hugo \
             --minify \
             --baseURL "${{ steps.pages.outputs.base_url }}/"
