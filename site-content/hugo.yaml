@@ -2,3 +2,7 @@ baseURL: https://wateret.github.io/quanta/
 languageCode: en-us
 title: quanta
 theme: ["PaperMod"]
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
