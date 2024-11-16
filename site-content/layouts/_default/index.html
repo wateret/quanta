@@ -1,6 +1,6 @@
 {{ define "main" }}
   <ul>
-    {{ range .Pages }}
+    {{ range sort .Pages ".File.Path" "desc" }}
       <li>
         <a href="{{ .RelPermalink }}">{{ .RelPermalink }}</a>
       </li>
