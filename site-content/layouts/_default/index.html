@@ -2,7 +2,7 @@
   <ul>
     {{ range sort .Pages "Date" "desc" }}
       <li>
-        <a href="{{ .RelPermalink }}">{{ .RelPermalink }}</a>
+        <a href="{{ .RelPermalink }}">{{ .Title }}</a>
       </li>
     {{ end }}
   </ul>
